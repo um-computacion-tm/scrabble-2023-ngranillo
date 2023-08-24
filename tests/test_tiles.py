@@ -1,5 +1,5 @@
 import unittest
-from game.scrabble import Tile
+from game.tiles import Tile
 
 
 class TestTiles(unittest.TestCase):
