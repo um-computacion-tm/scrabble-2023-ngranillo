@@ -3,9 +3,17 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
+## [0.0.4] - 2023-08-27
+
+### Added
+
+-player
+-tests for player
+
 ## [0.0.3] - 2023-08-26
 
 ### Added
+
 -board
 -cell
 -tests for board and cell
