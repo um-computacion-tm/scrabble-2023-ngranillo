@@ -7,6 +7,16 @@ class Board:
             for _ in range(15)
         ]
     
+    def is_active_and_letter_multiplier(self,cell):
+        return cell.status == 'active' and cell.multiplier_type == 'letter'
+
+    def is_active_and_word_multiplier(self,cell):
+        return cell.status == 'active' and cell.multiplier_type == 'word'
+    
+    def is_desactive_or_none_multiplier(self,cell):
+        return cell.status == 'desactive' or cell.multiplier_type == ''
+
+    
     def place_tile(self, row, col, tile):
         if 0 <= row < 15 and 0 <= col < 15:
             cell = self.grid[row][col]
