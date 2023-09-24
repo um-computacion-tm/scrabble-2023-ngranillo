@@ -4,12 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 
+## [0.0.13] - 2023-09-23
+
+### Added
+
+- improved scrabble class
+- tests for scrabble class
+
 ## [0.0.12] - 2023-09-12
 
 ### Added
 
 - improved player turn
-- tests fr player class
+- tests for player class
 
 ## [0.0.11] - 2023-09-11
 
