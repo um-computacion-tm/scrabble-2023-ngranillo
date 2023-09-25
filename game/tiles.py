@@ -2,12 +2,23 @@ class NotAJoker(Exception):
     pass
 
 class Tile:
-    def __init__(self, letter, value):
+    def __init__(self, letter=None, value=None):
         self.letter = letter
         self.value = value
-    
-    def get_value_by_letter(self, letter):
-        return self.value if self.letter == letter else 0
+
+    def __eq__(self, other):
+        if isinstance(other, Tile):
+            return self.letter == other.letter and self.value == other.value
+        return False
+
+    def __repr__(self):
+        return f"Tile(letter='{self.letter}', value={self.value})"
+
+    def get_value(self):
+        return self.value
+
+    def get_letter(self):
+        return self.letter
 
     def joker(self, new_letter):
         if self.letter == "*":

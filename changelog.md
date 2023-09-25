@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 
+## [0.0.15] - 2023-09-24
+
+### Added
+
+- major changes in the tile class
+
+## [0.0.14] - 2023-09-24
+
+### Added
+
+- changed all the cell function and its test
+
 ## [0.0.13] - 2023-09-23
 
 ### Added
