@@ -16,7 +16,6 @@ class Board:
     def is_desactive_or_none_multiplier(self,cell):
         return cell.status == 'desactive' or cell.multiplier_type == ''
 
-    
     def place_tile(self, row, col, tile):
         if 0 <= row < 15 and 0 <= col < 15:
             cell = self.grid[row][col]
