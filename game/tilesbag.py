@@ -31,6 +31,10 @@ LETTERS = {'A': [1, 12],
            'Z': [7, 1]}
 
 
+class DrawingMoreThanAvaliable(Exception):
+    pass
+
+
 class Tilebag:
     def __init__(self):
         self.tiles = []
@@ -43,9 +47,11 @@ class Tilebag:
     def take(self, count):
         random.shuffle(self.tiles)
         tiles = []
+        if count > len(self.tiles):
+            raise DrawingMoreThanAvaliable
         for _ in range(count):
             tiles.append(self.tiles.pop())
         return tiles
-
+    
     def put(self, tiles):
         self.tiles.extend(tiles)
